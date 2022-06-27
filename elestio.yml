@@ -27,13 +27,13 @@ volumes:
     containerPath: "/var/lib/postgresql/data"
 environments:
   - key: "APP_KEYS"
-    value: "1lxUm3FxlgWaBtOKi1ojyQ==,Z46OkMaAW5v4Cnoeugzntg==,fc4u15f1QhtlxZri2KssGQ==,B27isyfQLPPDkbE/l9Cj3g=="
+    value: "random_password,random_password,random_password,random_password"
   - key: "API_TOKEN_SALT"
-    value: "/4LqDRZgasPUW4+7jdMUFQ=="
+    value: "random_password"
   - key: "ADMIN_JWT_SECRET"
-    value: "2mws5/+pjPhDi170B9EHQw=="
+    value: "random_password"
   - key: "JWT_SECRET"
-    value: "/CLjatWrMG42zxJ8anFoXw=="
+    value: "random_password"
   - key: "HOST"
     value: "0.0.0.0"
   - key: "PORT"
@@ -49,4 +49,6 @@ environments:
   - key: "DB_USER"
     value: 'strapi'
   - key: "DB_PASSWORD"
-    value: 'strapi'
+    value: 'random_password'
+  - key: "ADMIN_EMAIL"
+    value: '[EMAIL]'
